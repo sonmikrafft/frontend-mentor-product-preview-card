@@ -1,0 +1,39 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: $font-m;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $font-weight-s;
+  color: black;
+  line-height: 1.5;
+
+  h1{
+    font-family: "Fraunces", sans-serif;
+    line-height: 1.2;
+  }
+
+
+  &.noscroll {
+    overflow: hidden;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+
+    a {
+      color: $darkCyan;
+    }
+  }
+}

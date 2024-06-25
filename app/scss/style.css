@@ -1,0 +1,56 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  line-height: 1.5;
+}
+body h1 {
+  font-family: "Fraunces", sans-serif;
+  line-height: 1.2;
+}
+body.noscroll {
+  overflow: hidden;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+body .attribution a {
+  color: hsl(158, 36%, 37%);
+}
+
+@media (min-width: 64em) {
+  .container {
+    padding: 7.25rem 1.5rem 7.25rem 1.5rem;
+    background-color: hsl(30, 38%, 92%);
+  }
+}
+
+.recipe {
+  margin: auto;
+  max-width: 24rem;
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 64em) {
+  .recipe {
+    max-width: 46rem;
+    border-radius: 1rem;
+    padding: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

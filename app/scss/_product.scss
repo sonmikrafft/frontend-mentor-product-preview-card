@@ -1,0 +1,19 @@
+.container {
+  @include breakpoint-up(large){
+    padding: 7.25rem 1.5rem 7.25rem 1.5rem;
+    background-color: $cream;
+  }
+}
+
+.recipe {
+  margin: auto;
+  max-width: 24rem;
+  background-color: $white;
+
+  @include breakpoint-up(large) {
+    max-width: 46rem;
+    border-radius: 1rem;
+    padding: 2.5rem;
+  }
+
+}
