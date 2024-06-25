@@ -14,15 +14,32 @@ body {
   font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: black;
-  line-height: 1.5;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.75;
 }
 body h1 {
   font-family: "Fraunces", sans-serif;
-  line-height: 1.2;
+  font-size: 2.25em;
+  line-height: 1;
+  color: black;
 }
-body.noscroll {
-  overflow: hidden;
+body .btn {
+  padding: 1rem;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+body .btn:hover {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+body .mb {
+  margin-bottom: 0.5rem;
+}
+body .inline-icon {
+  vertical-align: middle;
+  padding-right: 0.5rem;
 }
 body .attribution {
   font-size: 11px;
@@ -33,24 +50,83 @@ body .attribution a {
   color: hsl(158, 36%, 37%);
 }
 
-@media (min-width: 64em) {
+.container {
+  padding: 2rem 1rem;
+  background-color: hsl(30, 38%, 92%);
+}
+@media (min-width: 40em) {
   .container {
     padding: 7.25rem 1.5rem 7.25rem 1.5rem;
-    background-color: hsl(30, 38%, 92%);
   }
 }
 
-.recipe {
+.card {
   margin: auto;
-  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
   background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
-@media (min-width: 64em) {
-  .recipe {
-    max-width: 46rem;
-    border-radius: 1rem;
-    padding: 2.5rem;
+@media (min-width: 40em) {
+  .card {
+    max-width: 37.5rem;
+    flex-direction: row;
   }
+}
+
+.image {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/image-product-mobile.jpg");
+}
+@media (min-width: 40em) {
+  .image {
+    flex: 1;
+    background-image: url("/images/image-product-desktop.jpg");
+    width: 18.75rem;
+    height: 28.125rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .text {
+    flex: 1;
+  }
+}
+
+.product {
+  padding: 1.5rem;
+}
+@media (min-width: 40em) {
+  .product {
+    flex: 1;
+    padding: 2rem;
+  }
+}
+.product__category {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+.product__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.product__price__new {
+  flex: 1;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.25em;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.product__price__old {
+  flex: 2;
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */

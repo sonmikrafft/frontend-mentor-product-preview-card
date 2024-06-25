@@ -14,17 +14,40 @@ body {
   font-size: $font-m;
   font-family: "Montserrat", sans-serif;
   font-weight: $font-weight-s;
-  color: black;
-  line-height: 1.5;
+  color: $darkGrayishBlue;
+  line-height: 1.75;
 
   h1{
     font-family: "Fraunces", sans-serif;
-    line-height: 1.2;
+    font-size: $font-h1;
+    line-height: 1;
+    color: black;
   }
 
+  .btn {
+    padding: 1rem;
+    background-color: $darkCyan;
+    border-radius: 0.5rem;
+    color: $white;
+    text-align: center;
 
-  &.noscroll {
-    overflow: hidden;
+    &:hover {
+      background-color: $veryDarkBlue;
+      cursor: pointer;
+    }
+  }
+
+  .mb {
+    margin-bottom: 0.5rem;
+
+    @include breakpoint-up(medium) {
+      //margin-bottom: 2rem;
+    }
+  }
+
+  .inline-icon {
+    vertical-align: middle;
+    padding-right: 0.5rem;
   }
 
   .attribution {

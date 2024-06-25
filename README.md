@@ -52,10 +52,9 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+- for the container: use full height of screen
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+height: 100vh;
 ```
 ```js
 const proudOfThisFunc = () => {
