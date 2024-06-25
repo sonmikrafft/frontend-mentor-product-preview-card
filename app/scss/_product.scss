@@ -1,10 +1,12 @@
 .container {
+  display: flex;
+  align-items: center;
   padding: 2rem 1rem;
   background-color: $cream;
-  //height: 100vh; // use full screen
+  height: 100vh; // use full screen
 
   @include breakpoint-up(medium){
-    padding: 7.25rem 1.5rem 7.25rem 1.5rem;
+    padding: 7.25rem 1.5rem;
   }
 }
 

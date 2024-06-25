@@ -51,12 +51,15 @@ body .attribution a {
 }
 
 .container {
+  display: flex;
+  align-items: center;
   padding: 2rem 1rem;
   background-color: hsl(30, 38%, 92%);
+  height: 100vh;
 }
 @media (min-width: 40em) {
   .container {
-    padding: 7.25rem 1.5rem 7.25rem 1.5rem;
+    padding: 7.25rem 1.5rem;
   }
 }
 
